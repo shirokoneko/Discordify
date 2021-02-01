@@ -1,1 +1,485 @@
+:root {
+  --like-color: #7289DA;
+}
 
+* {
+  font-family: "Whitney", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+}
+
+/*hide the left side new playlist button*/
+.LeftSidebarNewPlaylistButton__button {
+  display: none !important;
+}
+
+/* Player bar wrapper */
+.player-bar-wrapper {
+  background-color: var(--modspotify_player_bg) !important;
+}
+
+.view-player .player-controls-container .controls .button-play,
+.view-player .player-controls-container .controls .button-play:after {
+  box-shadow: none !important;
+}
+
+/* Remove all letter spacing */
+.Button--style-green,
+.button.button-with-stroke,
+.button.button-green,
+.SidebarList__title,
+.Card__info-subtitle-metadata,
+.navbar-nav>li>a,
+.glue-page-header__content .glue-page-header__label,
+.account-info__profile-info-product,
+.glue-page-header__count-label-text,
+.glue-page-header__count-label-number,
+.button[data-button=add-recommendation],
+.Header__label,
+.button.button-blue {
+  letter-spacing: normal !important;
+}
+
+/* Remove all text transforms */
+.Card__info-subtitle-metadata,
+.button.button-green,
+.Button--style-green,
+.button.button-with-stroke,
+.GlueSectionDivider__title,
+.b-pause-text .b-alt-text,
+.b-play-text,
+.navbar-nav>li>a,
+.glue-page-header__content .glue-page-header__label,
+.account-info__profile-info-product,
+.glue-page-header__count-label-text,
+.glue-page-header__count-label-number,
+.button[data-button=add-recommendation],
+.Header__label,
+.button.button-blue {
+  text-transform: initial !important;
+}
+
+/* Dropdown menu */
+select {
+  align-items: center !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  border-color: var(--modspotify_sidebar_and_player_bg) !important;
+  border-radius: 4px !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  min-height: 40px !important;
+  outline: 0px !important;
+
+  transition: border 0.15s ease 0s !important;
+}
+
+/* Forms */
+.body-container--unknown-os input[type=search],
+.body-container--unknown-os input[type=text],
+.body-container--windows input[type=search],
+.body-container--windows input[type=text],
+.PlaylistAnnotationModal__playlist-description-textarea {
+  background-color: var(--modspotify_sidebar_and_player_bg) !important;
+  color: var(--modspotify_interactive_hover) !important;
+}
+.h-search-wrapper:not(:active):not(:focus) {
+  border: 1px solid var(--modspotify_input) !important;
+  border-radius: 3px !important;
+  -webkit-transition: border-color .2s ease-in-out !important;
+  transition: border-color .2s ease-in-out !important;
+}
+.h-search-wrapper:active,
+.h-search-wrapper:focus {
+  border: 1px solid var(--modspotify_blurple) !important;
+}
+
+/* Sliders */
+.slider {
+  background-color: #43B581 !important;
+  border: 2px solid transparent !important;
+}
+
+.slider:not(.enabled) {
+  background-color: var(--modspotify_muted) !important;
+  opacity: 1 !important;
+}
+
+#settings.is-incognito .incognito-state .slider {
+  background-color: #43B581 !important;
+  opacity: 0.3 !important;
+}
+
+#settings.is-incognito .incognito-state .slider:not(.enabled) {
+  background-color: var(--modspotify_muted) !important;
+  opacity: 0.3 !important;
+}
+
+.slider div {
+  background-color: #fff !important;
+}
+
+/* Buttons */
+.button.button-green,
+.Button--style-green,
+.button.button-with-stroke,
+.button[data-button=add-recommendation]:hover {
+  background-color: #43B581 !important;
+  border-radius: 3px !important;
+  font-size: 100% !important;
+  font-weight: 500 !important;
+  padding: 2px 16px !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.button.button-green,
+.button.button-green.button-play.current.playing,
+.button.button-with-stroke.added,
+.added .button-add:not(.button-icon-only):not(.button-icon-with-stroke),
+.button[data-button=add-recommendation],
+.button.button-blue {
+  background-color: var(--modspotify_grey_button) !important;
+  color: var(--modspotify_main_fg) !important;
+  border-radius: 3px !important;
+  font-size: 100% !important;
+  font-weight: 500 !important;
+  padding: 2px 16px !important;
+}
+
+.button.button-green:hover,
+.button.button-green.button-play.current.playing:hover,
+.button.button-with-stroke.added:hover,
+.added .button-add:not(.button-icon-only):not(.button-icon-with-stroke):hover,
+.button.button-blue:hover {
+  background-color: var(--modspotify_dark_grey_button) !important;
+}
+
+.button.button-with-stroke::after {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.Button--style-green,
+.glue-page-header__button .button.button-green,
+.showAdvancedSettings {
+  background-color: var(--modspotify_blurple) !important;
+  border-radius: 3px !important;
+  font-size: 100% !important;
+  font-weight: 500 !important;
+  padding: 2px 16px !important;
+  transform: none !important;
+}
+
+.Button--style-green:hover,
+.glue-page-header__button .button.button-green:hover {
+  background-color: var(--modspotify_blurple_hover) !important;
+}
+
+.Button--style-green:active,
+.glue-page-header__button .button.button-green:active {
+  background-color: var(--modspotify_blurple_active) !important;
+}
+
+.button.button-with-stroke:hover,
+.button[data-button=add-recommendation]:active {
+  background-color: #3ca374 !important;
+}
+
+.button[data-button=add-recommendation] {
+  min-width: 80px !important;
+}
+
+.button.button-with-stroke:active {
+  background-color: #369167 !important;
+}
+
+.button.button-with-stroke.added:hover {
+  background-color: var(--modspotify_danger_hover) !important;
+}
+
+.button.button-with-stroke.added:active {
+  background-color: var(--modspotify_danger_active) !important;
+}
+
+/* Context menu */
+.context-menu,
+.ConnectPopup {
+  background: var(--modspotify_context_menu) !important;
+  border-radius: 4px !important;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.24) !important;
+  min-width: 188px !important;
+  max-width: 320px !important;
+  padding: 6px 8px !important;
+}
+
+.ConnectPopup:after {
+  border-top-color: var(--modspotify_context_menu) !important;
+}
+
+.ConnectPopup__content {
+  background: transparent !important;
+}
+
+.ConnectPopup__devices-image {
+  content: url("https://discord.com/assets/b93ef52d62a513a4f2127a6ca0c3208c.svg") !important;
+}
+
+.context-menu .item,
+.ConnectPopup__device--available:focus,
+.ConnectPopup__device--available:hover {
+  align-items: center !important;
+  border-radius: 2px !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.context-menu .item {
+  margin: 2px 0 !important;
+  padding: 6px 8px !important;
+}
+
+.ConnectPopup__device-info:hover,
+.ConnectPopup__device-info:active {
+  color: var(--modspotify_main_fg) !important;
+}
+
+.context-menu .item.hover:not(.disabled),
+.ConnectPopup__device--available:focus,
+.ConnectPopup__device--available:hover {
+  background-color: var(--modspotify_blurple_hover) !important;
+}
+
+.context-menu .item.hover:not(.disabled):active,
+.ConnectPopup__device--available:focus,
+.ConnectPopup__device--available:active {
+  background-color: var(--modspotify_blurple_active) !important;
+}
+
+.ConnectPopup__device--active,
+.ConnectPopup__device--active .ConnectPopup__device-info,
+.ConnectPopup__device--active .ConnectPopup__device-title {
+  color: var(--modspotify_blurple_main_fg) !important
+}
+
+/* Separators */
+.context-menu .sep {
+  background-color: var(--modspotify_main_fg) !important;
+  opacity: 0.06 !important;
+}
+
+.tracklist-album,
+.tracklist-chart,
+.tracklist-basic,
+.tracklist-playlist,
+.tracklist-podcast,
+.tracklist-popular,
+.tracklist-station,
+.tracklist-queue,
+.tracklist-search {
+  border-bottom: 1px solid rgba(var(--modspotify_main_fg), 0.06) !important;
+}
+
+/*search bar edits*/
+.SearchInput__input {
+  color: var(--modspotify_muted) !important;
+  background-color: var(--modspotify_sidebar_and_player_bg) !important;
+  border-style: solid !important;
+  border-radius: 4px !important;
+  border-color: var(--modspotify_sidebar_and_player_bg) !important;
+  padding-left: 10px !important;
+}
+
+.SearchInput__searchIcon::before {
+  padding-left: 155px !important;
+}
+
+.SearchInput__searchIcon {
+  color: var(--modspotify_secondary_fg) !important;
+}
+
+.content-top-bar__search-input {
+  max-width: unset !important;
+  height: auto !important;
+}
+
+/* Header */
+.GlueHeader__background-color {
+  border-color: var(--modspotify_sidebar_and_player_bg) !important;
+  background-color: var(--modspotify_header_bg) !important;
+  background-image: unset !important;
+}
+
+.Header__background-color {
+  border-color: var(--modspotify_sidebar_and_player_bg) !important;
+  background-image: unset !important;
+}
+
+.Header__background-color[style],
+.PlaylistAnnotationModal {
+  background-color: var(--modspotify_header_bg) !important;
+}
+
+.GlueSectionDivider__title {
+  font-size: 24px !important;
+}
+
+.GlueSectionDivider__container {
+  border-bottom: 1px solid var(--modspotify_header_bg) !important;
+}
+
+/* Player */
+.handle {
+  background: var(--modspotify_pressing_button_fg) !important;
+  border: 3px solid var(--modspotify_pressing_button_fg) !important;
+}
+
+.progress-bar-wrapper.progress-bar-wrapper--ltr.handle {
+  background: unset !important;
+  border: unset !important;
+}
+
+.view-player .text-container .text-item-container .text-item .scroll-text-container:before,
+.view-player .text-container .text-item-container .text-item .scroll-text-container:after {
+  background: transparent !important;
+  opacity: 0 !important;
+}
+
+.view-player .extra-controls-container .volumebar-container .progress-bar .inner {
+  background: #7289DA !important;
+}
+
+.view-player .player-controls-container .controls .button-repeat.active {
+  color: #7289DA !important;
+}
+
+/*side bar*/
+.SidebarListItem--is-active:after {
+  background-color: #7289DA;
+}
+
+/* Tab bar */
+.navbar-nav>li>a {
+  font-weight: normal !important;
+  font-size: 14px !important;
+  color: var(--modspotify_interactive_normal) !important;
+}
+
+.navbar-nav>li.active>a {
+  color: var(--modspotify_main_fg) !important;
+}
+
+.nav>li.active>a::after {
+  background-color: var(--modspotify_main_fg) !important;
+}
+
+/* Listings */
+.AlbumHeader.Header.Header__background.Header__background-color {
+  background-color: var(--modspotify_sidebar_and_player_bg) !important;
+}
+
+.Card__image,
+.card-image,
+.gc-image-container,
+.view-player .now-playing .cover-image-link figure .cover-image {
+  border-radius: 8px !important;
+}
+
+.TableRow--is-hover-forced,
+.TableRow:hover {
+  background-color: var(--modspotify_grey_button) !important;
+  border-radius: 8px !important;
+  margin: 0 10px 0 20px !important;
+  opacity: 0.16 !important;
+  padding: 16px 10px !important;
+}
+
+.tl-row.selected .tl-cell {
+  background-color: var(--modspotify_dark_grey_button) !important;
+}
+
+/* Profile pics */
+.account-info__profile-image>div>div>div>div,
+.friend .user-play-button .card-image {
+  border-radius: 32px !important;
+}
+
+.Card--artist .Card__image,
+.Card--artist .Card__image-hit-area,
+.Card--artist .Card__overlay,
+.Card--artist .Card__placeholder,
+.Card--profile .Card__image,
+.Card--profile .Card__image-hit-area,
+.Card--profile .Card__overlay,
+.Card--profile .Card__placeholder,
+.card-type-artist .card-image,
+.card-type-artist .card-image-hit-area,
+.card-type-artist .card-overlay,
+.card-type-artist .card-placeholder-wrapper,
+.card-type-artist .card-image-link,
+.card-type-artist .card-hit-area-counter-scale,
+.card-type-collection-artist .card-image,
+.card-type-collection-artist .card-image-hit-area,
+.card-type-collection-artist .card-overlay,
+.card-type-collection-artist .card-placeholder-wrapper,
+.card-type-collection-artist .card-image-link,
+.card-type-collection-artist .card-hit-area-counter-scale,
+.card-type-user .card-image,
+.card-type-user .card-image-hit-area,
+.card-type-user .card-overlay,
+.card-type-user .card-placeholder-wrapper,
+.card-type-user .card-image-link,
+.card-type-user .card-hit-area-counter-scale {
+  border-radius: 500px !important;
+}
+
+/* Buttons */
+.Button--style-icon-stroke,
+.button.button-icon-with-stroke {
+  background: var(--modspotify_sidebar_and_player_bg) !important;
+  box-shadow: none !important;
+  color: var(--modspotify_interactive_normal) !important;
+}
+
+.Button--style-icon-stroke:hover,
+.button.button-icon-with-stroke:hover {
+  background: var(--modspotify_context_menu) !important;
+  color: var(--modspotify_interactive_hover) !important;
+}
+
+.Button--style-icon-stroke:after,
+.button.button-icon-with-stroke::after {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/*like heart thingy in bottom player*/
+.nowplaying-add-button .button .button-icon-only .button-add,
+.nowplaying-ban-button .button .button-icon-only .button-ban .spoticon-ban-16 {
+  color: var(--like-color) !important;
+}
+
+.view-player .player-controls-container .progress-container.progress-bar-enabled.dragging-progress-bar .progress-bar .inner,
+.view-player .player-controls-container .progress-container.progress-bar-enabled:hover .progress-bar .inner {
+  background: #7289DA !important;
+}
+
+.view-player .player-controls-container .progress-container .progress-bar .inner {
+  background: #7289DA !important;
+}
+
+/*like heart in playlist*/
+button.button-icon-only.button-add,
+.spoticon-heart-16,
+.spoticon-heart-active-16,
+.spoticon-heart-active-32,
+.spoticon-heart-32 {
+  color: var(--like-color) !important;
+}
+
+/*highlighted playlist text color*/
+.tl-row.current .tl-cell:not(.tl-number),
+.tl-row.current .tl-cell a:link,
+.tl-row.current .tl-highlight {
+  color: #cccccc;
+}
