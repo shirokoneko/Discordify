@@ -6,11 +6,6 @@
   font-family: "Whitney", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
 }
 
-/*hide the left side new playlist button*/
-.LeftSidebarNewPlaylistButton__button {
-  display: none !important;
-}
-
 /* Player bar wrapper */
 .player-bar-wrapper {
   background-color: var(--modspotify_player_bg) !important;
@@ -280,7 +275,7 @@ select {
   border-bottom: 1px solid rgba(var(--modspotify_main_fg), 0.06) !important;
 }
 
-/*search bar edits*/
+/* Search */
 .SearchInput__input {
   color: var(--modspotify_muted) !important;
   background-color: var(--modspotify_sidebar_and_player_bg) !important;
@@ -353,7 +348,7 @@ select {
   color: #7289DA !important;
 }
 
-/*side bar*/
+/* Side bar */
 .SidebarListItem--is-active:after {
   background-color: #7289DA;
 }
@@ -452,7 +447,7 @@ select {
   box-shadow: none !important;
 }
 
-/*like heart thingy in bottom player*/
+/* Heart icon */
 .nowplaying-add-button .button .button-icon-only .button-add,
 .nowplaying-ban-button .button .button-icon-only .button-ban .spoticon-ban-16 {
   color: var(--like-color) !important;
@@ -466,8 +461,6 @@ select {
 .view-player .player-controls-container .progress-container .progress-bar .inner {
   background: #7289DA !important;
 }
-
-/*like heart in playlist*/
 button.button-icon-only.button-add,
 .spoticon-heart-16,
 .spoticon-heart-active-16,
@@ -476,7 +469,7 @@ button.button-icon-only.button-add,
   color: var(--like-color) !important;
 }
 
-/*highlighted playlist text color*/
+/* Highlighted playlist text */
 .tl-row.current .tl-cell:not(.tl-number),
 .tl-row.current .tl-cell a:link,
 .tl-row.current .tl-highlight {
