@@ -344,7 +344,7 @@ select {
   background: #7289DA !important;
 }
 
-.view-player .player-controls-container .controls .button-repeat.active {
+.view-player .player-controls-container .controls .button-repeat.active, .button-shuffle.active {
   color: #7289DA !important;
 }
 
