@@ -11,7 +11,7 @@ Prerequisite: Make sure you already have [Spicetify](https://github.com/khanhas/
 5. Just to make sure it's all set, type `spicetify update` and relaunch your Spotify.
 
 If you ever want to switch themes, you can just type `spicetify config color_scheme Light` for example.
-The currently available themes are `Dark`, `Light, `AMOLED`
+The currently available themes are `Dark`, `Light`, `AMOLED`
 
 ## Contributing
 It's my first time making a theme for Spicetify so if you find anything that's a bit off or you'd like to theme any missing areas, feel free to submit a PR!
