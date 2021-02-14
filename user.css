@@ -387,14 +387,13 @@ select {
 
 .TableRow--is-hover-forced,
 .TableRow:hover {
-  background-color: var(--modspotify_grey_button) !important;
   border-radius: 8px !important;
   margin: 0 10px 0 20px !important;
-  opacity: 0.16 !important;
   padding: 16px 10px !important;
 }
 
-.tl-row.selected .tl-cell {
+.tl-row.selected .tl-cell,
+.TableRow--is-selected {
   background-color: var(--modspotify_dark_grey_button) !important;
 }
 
