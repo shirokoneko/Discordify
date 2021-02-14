@@ -77,12 +77,14 @@ select {
   background-color: var(--modspotify_sidebar_and_player_bg) !important;
   color: var(--modspotify_interactive_hover) !important;
 }
+
 .h-search-wrapper:not(:active):not(:focus) {
   border: 1px solid var(--modspotify_input) !important;
   border-radius: 3px !important;
   -webkit-transition: border-color .2s ease-in-out !important;
   transition: border-color .2s ease-in-out !important;
 }
+
 .h-search-wrapper:active,
 .h-search-wrapper:focus {
   border: 1px solid var(--modspotify_blurple) !important;
@@ -243,6 +245,7 @@ select {
 .ConnectPopup__device--available:focus,
 .ConnectPopup__device--available:hover {
   background-color: var(--modspotify_blurple_hover) !important;
+  color: var(--modspotify_colored_button_text) !important;
 }
 
 .context-menu .item.hover:not(.disabled):active,
@@ -344,7 +347,8 @@ select {
   background: #7289DA !important;
 }
 
-.view-player .player-controls-container .controls .button-repeat.active, .button-shuffle.active {
+.view-player .player-controls-container .controls .button-repeat.active,
+.button-shuffle.active {
   color: #7289DA !important;
 }
 
@@ -447,6 +451,18 @@ select {
   box-shadow: none !important;
 }
 
+.button.button-green,
+.button.button-green.button-play.current.playing,
+.button.button-with-stroke,
+.button.button-with-stroke.added,
+.added .button-add:not(.button-icon-only):not(.button-icon-with-stroke),
+.button[data-button=add-recommendation],
+.button.button-blue,
+.Button__alt-text,
+.Button__text {
+  color: var(--modspotify_colored_button_text) !important;
+}
+
 /* Heart icon */
 .nowplaying-add-button .button .button-icon-only .button-add,
 .nowplaying-ban-button .button .button-icon-only .button-ban .spoticon-ban-16 {
@@ -461,6 +477,7 @@ select {
 .view-player .player-controls-container .progress-container .progress-bar .inner {
   background: #7289DA !important;
 }
+
 button.button-icon-only.button-add,
 .spoticon-heart-16,
 .spoticon-heart-active-16,
