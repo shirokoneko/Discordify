@@ -338,7 +338,14 @@ select {
 }
 
 .GlueSectionDivider__container {
-  border-bottom: 1px solid var(--modspotify_header_bg) !important;
+  border-bottom: 1px solid var(--modspotify_dividers) !important;
+}
+
+/* Friends list */
+#view-buddy-list,
+.section-divider-sticky-wrapper,
+.buddy-card {
+  background-color: var(--modspotify_header_bg) !important;
 }
 
 /* Player */
@@ -371,12 +378,17 @@ select {
 ::-webkit-scrollbar {
 	height: 6px !important;
 	width: 6px !important;
-  padding-right: 3px !important;
-	background-color: var(--modspotify_player_bg) !important;
 }
 ::-webkit-scrollbar-thumb {
 	border-radius: 3px !important;
   background-color: var(--modspotify_sidebar_and_player_bg) !important;
+}
+.LeftSidebar__scroll-section::-webkit-scrollbar-track {
+  background-color: transparent !important;
+}
+::-webkit-scrollbar-track {
+  border-radius: 3px !important;
+  background-color: var(--modspotify_header_bg) !important;
 }
 ::-webkit-scrollbar-button {
 	display: none !important;
@@ -426,8 +438,16 @@ select {
 .TableRow--is-selected {
   background-color: var(--modspotify_dark_grey_button) !important;
 }
-.tl-header th, .tl-cell {
+.tl-header th, .tl-cell,
+.TableCell,
+.list-group-item {
   border-top: 1px solid var(--modspotify_dividers) !important;
+}
+.section-divider,
+.list-group-item,
+.Table__sticky-header-table,
+.Table__table {
+  border-bottom: 1px solid var(--modspotify_dividers) !important;
 }
 
 /* Profile pics */
