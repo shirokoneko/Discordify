@@ -484,7 +484,10 @@ select {
 .card-type-user .card-hit-area-counter-scale {
   border-radius: 500px !important;
 }
-.Card__image-hit-area {
+.Card__image-hit-area,
+.card-placeholder-wrapper,
+.Card__image-hit-area:hover,
+.card-placeholder-wrapper:hover {
   background-color: transparent !important;
 }
 
