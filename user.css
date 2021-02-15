@@ -484,6 +484,9 @@ select {
 .card-type-user .card-hit-area-counter-scale {
   border-radius: 500px !important;
 }
+.Card__image-hit-area {
+  background-color: transparent !important;
+}
 
 /* Buttons */
 .Button--style-icon-stroke,
