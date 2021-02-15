@@ -29,7 +29,8 @@
 .glue-page-header__count-label-number,
 .button[data-button=add-recommendation],
 .Header__label,
-.button.button-blue {
+.button.button-blue,
+.button.button-red {
   letter-spacing: normal !important;
 }
 
@@ -48,7 +49,8 @@
 .glue-page-header__count-label-number,
 .button[data-button=add-recommendation],
 .Header__label,
-.button.button-blue {
+.button.button-blue,
+.button.button-red {
   text-transform: initial !important;
 }
 
@@ -141,6 +143,19 @@ select {
   font-size: 100% !important;
   font-weight: 500 !important;
   padding: 2px 16px !important;
+}
+
+.button.button-red {
+  background-color: var(--modspotify_danger_hover) !important;
+  border-radius: 3px !important;
+  font-size: 100% !important;
+  font-weight: 500 !important;
+  padding: 2px 16px !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+.button.button-red:hover {
+  background-color: var(--modspotify_danger_active) !important
 }
 
 .button.button-green:hover,
@@ -245,7 +260,7 @@ select {
 .ConnectPopup__device--available:focus,
 .ConnectPopup__device--available:hover {
   background-color: var(--modspotify_blurple_hover) !important;
-  color: var(--modspotify_colored_button_text) !important;
+  color: #fff !important;
 }
 
 .context-menu .item.hover:not(.disabled):active,
@@ -352,6 +367,22 @@ select {
   color: #7289DA !important;
 }
 
+/* Scroll bar */
+::-webkit-scrollbar {
+	height: 6px !important;
+	width: 6px !important;
+  padding-right: 3px !important;
+	background-color: var(--modspotify_player_bg) !important;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 3px !important;
+  background-color: var(--modspotify_sidebar_and_player_bg) !important;
+}
+::-webkit-scrollbar-button {
+	display: none !important;
+  
+}
+
 /* Side bar */
 .SidebarListItem--is-active:after {
   background-color: #7289DA;
@@ -394,6 +425,9 @@ select {
 .tl-row.selected .tl-cell,
 .TableRow--is-selected {
   background-color: var(--modspotify_dark_grey_button) !important;
+}
+.tl-header th, .tl-cell {
+  border-top: 1px solid var(--modspotify_dividers) !important;
 }
 
 /* Profile pics */
@@ -460,7 +494,7 @@ select {
 .button.button-blue,
 .Button__alt-text,
 .Button__text {
-  color: var(--modspotify_colored_button_text) !important;
+  color: #fff !important;
 }
 
 /* Heart icon */
