@@ -30,7 +30,9 @@
 .button[data-button=add-recommendation],
 .Header__label,
 .button.button-blue,
-.button.button-red {
+.button.button-red,
+.Button--style-stroke,
+.card-info-subtitle-metadata {
   letter-spacing: normal !important;
 }
 
@@ -50,7 +52,9 @@
 .button[data-button=add-recommendation],
 .Header__label,
 .button.button-blue,
-.button.button-red {
+.button.button-red,
+.Button--style-stroke,
+.card-info-subtitle-metadata {
   text-transform: initial !important;
 }
 
@@ -70,11 +74,29 @@ select {
   transition: border 0.15s ease 0s !important;
 }
 
+.Button--style-stroke {
+  background-color: var(--modspotify_header_bg) !important;
+  color: var(--modspotify_interactive_hover) !important;
+  border: 1px solid var(--modspotify_input) !important;
+  border-radius: 3px !important;
+  box-shadow: none !important;
+  -webkit-transition: border-color .2s ease-in-out !important;
+  transition: border-color .2s ease-in-out !important;
+  font-size: 14px !important;
+}
+.Button--style-stroke:after {
+  box-shadow: none !important;
+}
+
 /* Forms */
-.body-container--unknown-os input[type=search],
 .body-container--unknown-os input[type=text],
+.body-container--windows input[type=text] {
+  background-color: var(--modspotify_player_bg) !important;
+  color: var(--modspotify_interactive_hover) !important;
+}
+.body-container--unknown-os input[type=search],
 .body-container--windows input[type=search],
-.body-container--windows input[type=text],
+.PlaylistAnnotationModal__playlist-name-input,
 .PlaylistAnnotationModal__playlist-description-textarea {
   background-color: var(--modspotify_sidebar_and_player_bg) !important;
   color: var(--modspotify_interactive_hover) !important;
@@ -279,6 +301,10 @@ select {
   color: var(--modspotify_blurple_main_fg) !important
 }
 
+.view-player .extra-controls-container .button-devices:not(.active):after {
+  background-color: #F04747 !important;
+}
+
 /* Separators */
 .context-menu .sep {
   background-color: var(--modspotify_main_fg) !important;
@@ -452,6 +478,18 @@ select {
 .Table__sticky-header-table,
 .Table__table {
   border-bottom: 1px solid var(--modspotify_dividers) !important;
+}
+
+/* Explicit tags */
+.tl-explicit .label {
+  border: 1px solid !important;
+  border-radius: 11px !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  box-sizing: border-box !important;
+  height: 22px !important;
+  margin: 0 4px 4px 0 !important;
+  padding: 4px !important;
 }
 
 /* Profile pics */
