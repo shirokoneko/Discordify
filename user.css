@@ -146,7 +146,8 @@ select {
 }
 
 .button.button-red {
-  background-color: var(--modspotify_danger_hover) !important;
+  background-color: var(--modspotify_danger_color) !important;
+  color: #fff !important;
   border-radius: 3px !important;
   font-size: 100% !important;
   font-weight: 500 !important;
@@ -155,7 +156,10 @@ select {
   box-shadow: none !important;
 }
 .button.button-red:hover {
-  background-color: var(--modspotify_danger_active) !important
+  background-color: var(--modspotify_danger_hover) !important;
+}
+.button.button-red:active {
+  background-color: var(--modspotify_danger_active) !important;
 }
 
 .button.button-green:hover,
