@@ -208,7 +208,7 @@ select {
 .button.button-with-stroke.added:hover,
 .added .button-add:not(.button-icon-only):not(.button-icon-with-stroke):hover,
 .button.button-blue:hover {
-  background-color: var(--modspotify_dark_grey_button) !important;
+  background-color: var(--modspotify_muted) !important;
 }
 
 .button.button-with-stroke::after {
