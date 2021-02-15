@@ -10,8 +10,15 @@ Prerequisite: Make sure you already have [Spicetify](https://github.com/khanhas/
 4. To set your theme to Discordify, type `spicetify config current_theme Discord`
 5. Just to make sure it's all set, type `spicetify update` and relaunch your Spotify.
 
+### Themes
 If you ever want to switch themes, you can just type `spicetify config color_scheme Light` for example.
-The currently available themes are `Dark`, `Light`, `AMOLED`
+
+The currently available themes are `Dark`, `Light`.
+
+#### Beta Themes
+- `AMOLED` is based on Discord's Android AMOLED experimental theme.
+- `Darker` is based on a hidden Discord build override that makes dark theme darker.
+- `Revamp` is based on Discord's website, and the custom [Discord-Revamp](https://github.com/LuckFire/Discord-Revamp) theme.
 
 ## Contributing
 It's my first time making a theme for Spicetify so if you find anything that's a bit off or you'd like to theme any missing areas, feel free to submit a PR!
