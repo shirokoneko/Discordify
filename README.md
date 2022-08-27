@@ -1,5 +1,7 @@
 # Discordify
-Spicetify theme to make your Spotify look like Discord
+Spicetify theme to make your Spotify look like Discord.
+
+**⚠️ This theme is outdated and compatible with the old Spotify UI. Whether or not I'll adapt it to the new and current Spotify UI, I don't know at this moment.**
 
 ## Installation
 Prerequisite: Make sure you already have [Spicetify](https://github.com/khanhas/spicetify-cli/) installed before applying this theme
@@ -24,7 +26,7 @@ The currently available themes are `Dark`, `Light`.
 It's my first time making a theme for Spicetify so if you find anything that's a bit off or you'd like to theme any missing areas, feel free to submit a PR!
 
 ## Screenshots
-![Browsing](https://i.imgur.com/Lz3UvkD.png)
-![Playlists](https://i.imgur.com/3Obhsty.png)
-![Album and Casting](https://i.imgur.com/f4ziCRP.png)
-![Artist Profiles](https://i.imgur.com/c5NOAmu.png)
+![Browsing](https://cdn.discordapp.com/attachments/616304833237876761/1013040564691816468/Lz3UvkD.png)
+![Playlists](https://cdn.discordapp.com/attachments/616304833237876761/1013040563517394984/3Obhsty.png)
+![Album and Casting](https://cdn.discordapp.com/attachments/616304833237876761/1013040564322697226/f4ziCRP.png)
+![Artist Profiles](https://cdn.discordapp.com/attachments/616304833237876761/1013040563882303538/c5NOAmu.png)
